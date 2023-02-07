@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Jone&#39;s Blog • Posts by &#34;linux&#34; category</title>
+        <link>https://www.jone.plus</link>
+        <description>技术栈笔记，以及在学习过程中遇到的坎坷。</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 29 Oct 2022 10:34:35 +0800</pubDate>
+        <lastBuildDate>Sat, 29 Oct 2022 10:34:35 +0800</lastBuildDate>
+        <category>hexo</category>
+        <category>android</category>
+        <category>software</category>
+        <category>秀色工具</category>
+        <category>linux</category>
+        <category>system</category>
+        <item>
+            <guid isPermalink="true">https://www.jone.plus/2022/10/29/share/system/KDE-Connect/</guid>
+            <title>Kde-Connect 实现 [Android | IOS | Linux ] 共享</title>
+            <link>https://www.jone.plus/2022/10/29/share/system/KDE-Connect/</link>
+            <category>linux</category>
+            <category>system</category>
+            <pubDate>Sat, 29 Oct 2022 10:34:35 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;kde-connect-实现-android-ios-linux-共享&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kde-connect-实现-android-ios-linux-共享&#34;&gt;#&lt;/a&gt; Kde-Connect 实现 [Android | IOS | Linux] 共享&lt;/h2&gt;
+&lt;p&gt;想要在计算机和智能手机之间传输包含最新家庭旅行或生日派对照片的相册？&lt;br&gt;
+KDE Con​​nect 使这比以往任何时候都更容易。还可以远程浏览手机文件或在其他设备上快速打开链接。&lt;br&gt;
+体验非常的 Nice.&lt;/p&gt;
+&lt;h3 id=&#34;kde-connect-体验&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kde-connect-体验&#34;&gt;#&lt;/a&gt; Kde-Connect 体验&lt;/h3&gt;
+&lt;p&gt;一上手感觉，非常的飒爽。&lt;/p&gt;
+&lt;div style=&#34;position: relative;width: 100%;height: 0;padding-bottom: 75%;&#34;&gt;
+&lt;!-- style=&#34;position: absolute;width: 100%;height: 100%;left: 0;top: 0;&#34; --&gt;
+  &lt;iframe  
+  src=&#34;//player.bilibili.com/player.html?aid=559526187&amp;bvid=BV1ie4y127b9&amp;cid=875512400&amp;page=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h3&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;电脑安装&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;首先给出官网地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rZGVjb25uZWN0LmtkZS5vcmcv&#34;&gt;Kde connect&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;因为本人用的是 archlinux ，所以使用的是 pacman 进行安装。&lt;/p&gt;
+&lt;p&gt;archlinux:  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcmNobGludXgub3JnL3BhY2thZ2VzL2V4dHJhL3g4Nl82NC9rZGVjb25uZWN0Lw==&#34;&gt;kdeconnect 22.08.2-1&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;# &lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;输入安装命令即可&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo pacman -Syy kdeconnect&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;android  安装&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;下载 kde-connect.apk&lt;/p&gt;
+&lt;p&gt;这里给出 apkpure 中的地址  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcGtwdXJlLmNvbS9rZGUtY29ubmVjdC9vcmcua2RlLmtkZWNvbm5lY3RfdHAvZG93bmxvYWQ=&#34;&gt;KDE Connect Of Apkpure&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://test-1258487036.cos.ap-nanjing.myqcloud.com/markdown/202210291911473.png&#34; alt=&#34;image-20221029191150370&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ipad | ios 安装&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;appstore 搜索 kde-connect 即可，或者打开 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcHBzLmFwcGxlLmNvbS9jbi9hcHAva2RlLWNvbm5lY3QvaWQxNTgwMjQ1OTkx&#34;&gt;kde-connect of appstore &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://test-1258487036.cos.ap-nanjing.myqcloud.com/markdown/202210291909849.png&#34; alt=&#34;IMG_0789&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.jone.plus/2022/10/15/problem/linux/Arch%20%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E8%93%9D%E7%89%99/</guid>
+            <title>Archlinux 突然启动不了蓝牙</title>
+            <link>https://www.jone.plus/2022/10/15/problem/linux/Arch%20%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E8%93%9D%E7%89%99/</link>
+            <category>linux</category>
+            <pubDate>Sat, 15 Oct 2022 00:30:41 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;archlinux-忽然间-arch-的蓝牙不能用了提示找不到适配器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#archlinux-忽然间-arch-的蓝牙不能用了提示找不到适配器&#34;&gt;#&lt;/a&gt; archlinux 忽然间 arch 的蓝牙不能用了，提示找不到适配器。&lt;/h2&gt;
+&lt;p&gt;事情的发生总是那么突然，忽然间 arch 的蓝牙不能用了，提示找不到适配器。&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;systemctl status bluetooth&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   bluetooth.service - Bluetooth service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     Loaded: loaded (/usr/lib/systemd/system/bluetooth.service; enabled; vendor preset: disabled)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     Active: inactive (dead)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       Docs: man:bluetoothd(8) &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;随即折腾了一会儿时间，找到了很多种方法，最后结合了两篇文章解决了这个问题。&lt;/p&gt;
+&lt;h3 id=&#34;archlinux-未找到蓝牙适配器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#archlinux-未找到蓝牙适配器&#34;&gt;#&lt;/a&gt; archlinux 未找到蓝牙适配器&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://test-1258487036.cos.ap-nanjing.myqcloud.com/markdown/not-found-bluetooth.png&#34; alt=&#34;not-found-bluetooth&#34;&gt;&lt;/p&gt;
+&lt;p&gt;首先禁止掉了两个服务，随后重启就可以正常打开蓝牙了，但是出现了新得问题，&lt;a href=&#34;#br-connection-profile-unavailable&#34;&gt;br-connection-profile-unavailable&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;# &lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;禁掉这两个服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl disable blueman-mechanism.service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl disable bluetooth-mesh.service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;重启之后就可以正常打开了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;br-connection-profile-unavailable&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#br-connection-profile-unavailable&#34;&gt;#&lt;/a&gt; br-connection-profile-unavailable&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://test-1258487036.cos.ap-nanjing.myqcloud.com/markdown/202210151410856.png&#34; alt=&#34;2022-10-14_23-47&#34;&gt;&lt;/p&gt;
+&lt;p&gt;事情的经过总是惊人的相似，再次打开浏览器，发现安装 pulseaudio-bluetooth 之后就可正常使用。&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo pacman -Syy pulseaudio-bluetooth&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;参考&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93aWtpLmFyY2hsaW51eC5vcmcvdGl0bGUvQmx1ZXRvb3Ro&#34;&gt;Bluetooth of archlinux&lt;/span&gt;   &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93aWtpLmFyY2hsaW51eC5vcmcvdGl0bGUvS2VybmVsX21vZHVsZSNPYnRhaW5pbmdfaW5mb3JtYXRpb24=&#34;&gt;kernel module&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNDgyNzk2NDYvYmx1ZXRvb3RoY3RsLW5vLWRlZmF1bHQtY29udHJvbGxlci1hdmFpbGFibGUvNjgzMzU2MzkjNjgzMzU2Mzk=&#34;&gt;bluetoothctl-no-default-controller-available&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYnMuYXJjaGxpbnV4Lm9yZy92aWV3dG9waWMucGhwP2lkPTI3MDQ2NQ==&#34;&gt;SOLVED] Bluetooth connect failed: br-connection-profile-unavailable.&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.jone.plus/2022/07/18/share/system/Ubuntu-Windows%20%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/</guid>
+            <title>Ubuntu-Windows 双系统安装后要做的事</title>
+            <link>https://www.jone.plus/2022/07/18/share/system/Ubuntu-Windows%20%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/</link>
+            <category>linux</category>
+            <category>system</category>
+            <pubDate>Mon, 18 Jul 2022 23:56:11 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;ubuntu-windows-双系统安装后要做的事&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ubuntu-windows-双系统安装后要做的事&#34;&gt;#&lt;/a&gt; Ubuntu + Windows 双系统安装后要做的事&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Update Apt Image&lt;/p&gt;
+&lt;p&gt;System → about → system update&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://test-1258487036.cos.ap-nanjing.myqcloud.com//markdownUntitled%201.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;测速，选择最快的镜像 (虽然速度有点慢！)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://test-1258487036.cos.ap-nanjing.myqcloud.com//markdownUntitled.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Unable to lock directory /var/lib/apt/lists/&lt;/p&gt;
+&lt;p&gt;That’s is have something running .   Yo&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3J1bm5pbmcuWW91&#34;&gt;u&lt;/span&gt; must waiting for something end.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双系统 Ubuntu + Windows 时间不正确&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xNDkxOTIwODE=&#34;&gt;解决 w10 和 ubuntu20.04 双系统时间不对问题&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;把 ubuntu 时间更新到计算机硬件时间上，在 ubuntu 的终端上输入如下代码：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 更新ubuntu的系统时间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install ntpdate&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo ntpdate time.windows.com&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 将时间更新到硬件上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo hwclock --localtime --systohc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;install input method “Chinese”😛&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# add apt repository&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo add-apt-repository ppa:hosxy/fcitx5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#just install chinese input method&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install fcitx fcitx-pinyin fcitx-libpinyin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install V2ray on Ubuntu. 😀&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9xaXl1YW4tei5naXRodWIuaW8vMjAyMC8wMi8yMy9VYnVudHUlRTklODUlOEQlRTclQkQlQUV2MnJheSVFOCVBRiVBNiVFNyVCQiU4NiVFNiU5NSU5OSVFNyVBOCU4Qi8=&#34;&gt;Ubuntu 配置 v2ray 详细教程&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#step1 download V2Ray Or to Select a version you want https://github.com/Qv2ray/Qv2ray/releases/tag/v1.99.6&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;wget https://github.com/Qv2ray/Qv2ray/releases/download/v1.99.6/Qv2ray-refs.tags.v1.99.6-linux.AppImage&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#step2 change the file to executable  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;chmod&lt;/span&gt; +x ./Qv2ray-refs.tags.v1.99.6-linux.AppImage&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#step4 Download File &amp;quot;V2ray-core&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;wget https://github.com/v2ray/v2ray-core/releases/download/v4.22.1/v2ray-linux-64.zip&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#or to slect one https://github.com/v2ray/v2ray-core/releases/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#step3 run app&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./Qv2ray-refs.tags.v1.99.6-linux.AppImage&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# config the core file&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# ok&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1F2MnJheS9RdjJyYXkvcmVsZWFzZXMvZG93bmxvYWQvdjEuOTkuNi9RdjJyYXktcmVmcy50YWdzLnYxLjk5LjYtbGludXguQXBwSW1hZ2U=&#34;&gt;https://github.com/Qv2ray/Qv2ray/releases/download/v1.99.6/Qv2ray-refs.tags.v1.99.6-linux.AppImage&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;美化 Ubuntu&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3BlbmRlc2t0b3Aub3JnL3MvR25vbWUvYnJvd3NlLw==&#34;&gt;Browse Latest | https://www.opendesktop.org/s/Gnome/browse/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ25vbWUtbG9vay5vcmcvYnJvd3NlLw==&#34;&gt;Browse Latest | https://www.gnome-look.org/browse/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;参考至：   &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC84MDc5Y2U1MDU3ZDM/bXNjbGtpZD01YmI1ODYwYmE5MjkxMWVjOTZjY2JjMzllNjBmNzcwYw==&#34;&gt;https://www.jianshu.com/p/8079ce5057d3?msclkid=5bb5860ba92911ec96ccbc39e60f770&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 删除Ubuntu 自带Dock&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt remove gnome-shell-extension-ubuntu-dock&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 隐藏Topbar ， 根据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;https://github.com/pixel-saver/pixel-saver&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装微信，Edge&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下载包 .deb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS96aC1jbi9lZGdl&#34;&gt;下载 Microsoft Edge Web 浏览器 | Microsoft&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudWJ1bnR1a3lsaW4uY29tL2FwcGxpY2F0aW9ucy8xMDYtY24uaHRtbA==&#34;&gt;微信&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开终端 😻&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装 过程可能会有依赖缺少，按照提示下载即可&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo dpkg -i xxxxxxx.deb&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装 Tim&lt;/p&gt;
+&lt;p&gt;搭建&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Zsb2F0X3N0b25lL2FydGljbGUvZGV0YWlscy8xMTQxMjU2MTA=&#34;&gt;Ubuntu20.04 安装 deepin-wine 微信、QQ_echo_pei 的博客 - CSDN 博客_deepin qq&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置磁盘自动挂载&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L08wb19Pcl9ub3QvYXJ0aWNsZS9kZXRhaWxzLzExMDEyNTA2NA==&#34;&gt;https://blog.csdn.net/O0o_Or_not/article/details/110125064&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 获取要自动挂载的分区的UUID和分区类型TYPE&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo blkid&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 取消挂载 后尝试手动挂载到 指定文件夹&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo mount -t ntfs /dev/sdb1 /media/Win10_HDD&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改fstab 文件，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo vi /etc/fstab&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#在最后面加入两行（语句含义后面介绍，如何使用vi命令编辑文件 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;UUID=B45A01D55A019570 /media/Ext_HDD ntfs defaults 0 2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 保存文件并退出&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 执行全部挂载(可选)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo mount -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启检验&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载解码器&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;strong&gt;Ubuntu Restricted Extras&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 添加源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo add-apt-repository multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install ubuntu-restricted-extras&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
