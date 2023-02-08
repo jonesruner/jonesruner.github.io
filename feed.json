@@ -79,19 +79,19 @@
             ]
         },
         {
-            "id": "https://www.jone.plus/2022/07/16/others/links/",
-            "url": "https://www.jone.plus/2022/07/16/others/links/",
-            "title": "links",
-            "date_published": "2022-07-15T16:36:19.000Z",
-            "content_html": "<h1 id=\"本站信息\"><a class=\"markdownIt-Anchor\" href=\"#本站信息\">#</a> 本站信息</h1>\n<ul>\n<li>site: Jone’s Blog</li>\n<li>owner: jone</li>\n<li>url:  <span class=\"exturl\" data-url=\"aHR0cHM6Ly9qb25lLnBsdXMv\">https://jone.plus/</span></li>\n<li>desc: 学习永无止境 🛬</li>\n<li>image: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9qb25lLnBsdXMvaW1hZ2VzL3BhbmRhLmpwZw==\">https://jone.plus/images/panda.jpg</span></li>\n<li>color: #e9546b</li>\n</ul>\n<h1 id=\"朋友们\"><a class=\"markdownIt-Anchor\" href=\"#朋友们\">#</a> 朋友们</h1>\n",
-            "tags": []
-        },
-        {
             "id": "https://www.jone.plus/2022/07/16/others/about/",
             "url": "https://www.jone.plus/2022/07/16/others/about/",
             "title": "about",
             "date_published": "2022-07-15T16:36:19.000Z",
             "content_html": "<h1 align=\"center\">Hello Everyone 👋</h1>\n<p>🔶 My Skill</p>\n<ul>\n<li>📱 Android (java,kotlin…)</li>\n<li>📄 front-end (html,css,js,vue…)</li>\n</ul>\n<p>💌 My hobby</p>\n<ul>\n<li>🎵 Listen Music</li>\n<li>📖 Read Book</li>\n<li>⌨️ Coding, HaHa 😄</li>\n<li>🎈 Sports ,Like Run、Basketball 🏀</li>\n</ul>\n<table >\n<tr  align=\"left\">\n    <th width=\"100\">🤱 brief </th>\n    <th>🤏 slogan </th>\n</tr>\n<tr  align=\"left\" style=\"emable\">\n    <td> I'm jone. </th>\n    <td>Life must be happy, don't make the golden bottle empty to the moon. Born my material will be useful, gold scattered back.</th>\n</tr> \n</table>\n<table>\n<thead>\n<tr>\n<th><a href=\"https://github.com/anuraghazra/github-readme-stats\"><img align=\"center\" data-src=\"https://github-readme-stats.vercel.app/api?username=jonesruner&show_icons=true&theme=buefy&hide_border=true\" alt=\"Anurag's github stats\" /></a></th>\n<th><a href=\"https://github.com/anuraghazra/github-readme-stats\"><img align=\"center\" data-src=\"https://github-readme-stats.vercel.app/api/top-langs/?username=jonesruner&layout=compact&theme=buefy&hide_border=true\" /></a></th>\n</tr>\n</thead>\n</table>\n",
+            "tags": []
+        },
+        {
+            "id": "https://www.jone.plus/2022/07/16/others/links/",
+            "url": "https://www.jone.plus/2022/07/16/others/links/",
+            "title": "links",
+            "date_published": "2022-07-15T16:36:19.000Z",
+            "content_html": "<h1 id=\"本站信息\"><a class=\"markdownIt-Anchor\" href=\"#本站信息\">#</a> 本站信息</h1>\n<ul>\n<li>site: Jone’s Blog</li>\n<li>owner: jone</li>\n<li>url:  <span class=\"exturl\" data-url=\"aHR0cHM6Ly9qb25lLnBsdXMv\">https://jone.plus/</span></li>\n<li>desc: 学习永无止境 🛬</li>\n<li>image: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9qb25lLnBsdXMvaW1hZ2VzL3BhbmRhLmpwZw==\">https://jone.plus/images/panda.jpg</span></li>\n<li>color: #e9546b</li>\n</ul>\n<h1 id=\"朋友们\"><a class=\"markdownIt-Anchor\" href=\"#朋友们\">#</a> 朋友们</h1>\n",
             "tags": []
         }
     ]
