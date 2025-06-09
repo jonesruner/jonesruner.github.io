@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.jone.plus</id>
+    <title>Jone&#39;s Blog • Posts by &#34;hexo&#34; tag</title>
+    <link href="https://www.jone.plus" />
+    <updated>2022-07-18T12:57:32.000Z</updated>
+    <category term="android" />
+    <category term="linux" />
+    <category term="hexo" />
+    <category term="system" />
+    <category term="software" />
+    <category term="秀色工具" />
+    <category term="uniapp" />
+    <category term="微信小程序" />
+    <entry>
+        <id>https://www.jone.plus/2022/07/18/share/hexo/Hexo-%E7%8B%AC%E5%AE%B6%E6%94%B6%E8%97%8F%E4%B8%BB%E9%A2%98/</id>
+        <title>Hexo-独家收藏主题</title>
+        <link rel="alternate" href="https://www.jone.plus/2022/07/18/share/hexo/Hexo-%E7%8B%AC%E5%AE%B6%E6%94%B6%E8%97%8F%E4%B8%BB%E9%A2%98/"/>
+        <content type="html">&lt;p&gt;记录下几款简约风格的 Hexo 主题&lt;/p&gt;
+&lt;h2 id=&#34;hexo-theme-livemylife&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-livemylife&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1YtVmluY2VuL2hleG8tdGhlbWUtbGl2ZW15bGlmZQ==&#34;&gt;hexo-theme-livemylife&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;created by&lt;/strong&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1YtVmluY2Vu&#34;&gt;V-Vincen (Vincent) (github.com)&lt;/span&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://fs.jone.plus/markdown/202207192241723.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92LXZpbmNlbi5saWZlLw==&#34;&gt;JavaDev | 一如 Java 深似海&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hexo-theme-keep&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-keep&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1hQb2V0L2hleG8tdGhlbWUta2VlcA==&#34;&gt;hexo-theme-keep&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;created by&lt;/strong&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1hQb2V0&#34;&gt;XPoet (指间的诗意) (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdown202207192238866.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly94cG9ldC5jbi8=&#34;&gt;XPoet’s Blog&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hexo-theme-shoka&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-shoka&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt;hexo-theme-shoka&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;created by&lt;/strong&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWU=&#34;&gt;amehime (观月真由理) (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;虽然有些花里胡哨，但是我喜欢，有播放器，有深夜模式切换。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdownUntitled%202.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv&#34;&gt;優萌初華&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hexo-theme-matery&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-matery&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JsaW5rZm94L2hleG8tdGhlbWUtbWF0ZXJ5&#34;&gt;hexo-theme-matery&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;created by  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JsaW5rZm94&#34;&gt;blinkfox (闪烁之狐 (blinkfox)) (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdownUntitled%203.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibGlua2ZveC5naXRodWIuaW8v&#34;&gt;闪烁之狐&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="hexo" />
+        <updated>2022-07-18T12:57:32.000Z</updated>
+    </entry>
+</feed>

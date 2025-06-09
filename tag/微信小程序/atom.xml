@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.jone.plus</id>
+    <title>Jone&#39;s Blog • Posts by &#34;微信小程序&#34; tag</title>
+    <link href="https://www.jone.plus" />
+    <updated>2024-10-26T08:01:45.000Z</updated>
+    <category term="android" />
+    <category term="linux" />
+    <category term="hexo" />
+    <category term="system" />
+    <category term="software" />
+    <category term="秀色工具" />
+    <category term="uniapp" />
+    <category term="微信小程序" />
+    <entry>
+        <id>https://www.jone.plus/2024/10/26/study/uniapp/uniapp-markertap/</id>
+        <title>Uniapp 地图标点 点击事件  markertap / bindmarkertap 不生效</title>
+        <link rel="alternate" href="https://www.jone.plus/2024/10/26/study/uniapp/uniapp-markertap/"/>
+        <content type="html">&lt;p&gt;Uniapp 地图标点 点击事件  markertap /bindmarkertap 不生效&lt;br&gt;
+先来说说 uniapp 的使用感想：&lt;br&gt;
+刚开始使用 uniapp 不久，使用上来说与 vue3 没有多大区别，setup 语法感觉非常舒适，使用起来方便、简易，相对于使用 flutter 、原生来说，对于小型企业来说真的是属于便利的一个跨平台框架了。&lt;br&gt;
+国内的现状，开发成本降低、适配平台需求较广，例如小程序 (支付宝、微信、抖音等等)、APP （android、ios）以及遥遥领先 harmony os。目前官方有说明已经大部分适配 鸿蒙，这个框架还是挺强的。&lt;br&gt;
+对于这种适配层面较广的框架，难免就会出现很多 BUG、兼容性适配。&lt;/p&gt;
+&lt;p&gt;今天遇到的问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;markertap 事件不生效&lt;/li&gt;
+&lt;li&gt;使用:markers 直接赋值在 map  微信开发工具正常显示、真机运行不显示&lt;/li&gt;
+&lt;li&gt;使用:covers    直接赋值在 map     微信开发工具不显示、真机运行显示正常&lt;br&gt;
+场景：&lt;br&gt;
+&amp;lt;map show-location&lt;br&gt;
+id=“map”&lt;br&gt;
+:latitude=“latitude”&lt;br&gt;
+:markers=“showMarker”  :covers=“showMarker”&lt;br&gt;
+:scale=“scale” :longitude=“longitude”&lt;br&gt;
+:polyline=“polyines”  name=“index-map”&lt;br&gt;
+style=“width: 100%;” :style=&amp;quot;{height :  &lt;code&gt;$&amp;#123;mapHeight&amp;#125;px&lt;/code&gt; }&amp;quot;&lt;br&gt;
+@tap=“onMapTap”  @markertap=“onMarkerTap”&amp;gt;&lt;br&gt;
+&lt;/map&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script setup lang=&#34;ts&#34;&gt;
+
+const markers = ref&lt;Map&lt;String, Marker&gt;&gt;(new Map())
+const showMarker = computed(()=&gt; [...markers.value.values()])
+
+// 当marker 被点击的时候
+function onMarkerTap(e) {
+        console.log(&#34;====&gt; marker 被点击&#34;, e);
+        activeId.value = e.detail.markerId
+        roadLine()
+}
+
+
+//.....................
+&lt;/script&gt;
+&lt;p&gt;遇到了 marker 不显示，后面将 markers 和 covers 都赋值在 map 组件上。最后都能看到了。于是开始解决 markertap 不生效的问题。&lt;/p&gt;
+&lt;p&gt;尝试：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 @markertap 绑定事件， 在微信开发者工具中可以正常运行，但是真机调试点击不了，不能正常响应&lt;/li&gt;
+&lt;li&gt;使用 bindmarkertap 进行绑定，随后在微信开发者工具报错，&amp;quot;In Component  Unabled to find onMarkerTap method to handle markertap.&amp;quot;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最终解决方案：&lt;br&gt;
+&amp;lt;map show-location&lt;br&gt;
+id=“map”&lt;br&gt;
+:latitude=“latitude”&lt;br&gt;
+:scale=“scale” :longitude=“longitude”&lt;br&gt;
+:polyline=“polyines”  name=“index-map”&lt;br&gt;
+style=“width: 100%;” :style=&amp;quot;{height :  &lt;code&gt;$&amp;#123;mapHeight&amp;#125;px&lt;/code&gt; }&amp;quot;&lt;br&gt;
+@tap=“onMapTap”  @markertap=“onMarkerTap”&amp;gt;&lt;br&gt;
+&lt;/map&gt;&lt;/p&gt;
+&lt;script lang=&#34;ts&#34; scoped&gt;
+    import { onLoad, onReady } from &#39;@dcloudio/uni-app&#39;;
+    
+    let mapContext : UniApp.MapContext
+    function getData(){
+         //....
+         mapContext.addMarkers({
+                            markers: [...markers.value.values()],
+                            clear: true
+         } as UniApp.MapContextAddMarkersOptions)
+         //....
+    }
+    
+    onLoad(() =&gt; {
+         mapContext = uni.createMapContext(&#34;map&#34;)
+    })
+    
+ //....
+&lt;/script&gt;
+&lt;p&gt;最终的解决方案就是将 marker 数据通过代码 手动添加到 map， 事件绑定仍然采用 @markertap  的形式去绑定。&lt;br&gt;
+原因暂时未知：有可能是 uniapp 在适配层没有去兼容 ，响应式 marker 数据没有绑定被点击的事件。&lt;/p&gt;
+</content>
+        <category term="android" />
+        <category term="uniapp" />
+        <category term="微信小程序" />
+        <updated>2024-10-26T08:01:45.000Z</updated>
+    </entry>
+</feed>

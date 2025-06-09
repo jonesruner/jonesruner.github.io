@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.jone.plus</id>
+    <title>Jone&#39;s Blog • Posts by &#34;android-dev&#34; category</title>
+    <link href="https://www.jone.plus" />
+    <updated>2023-05-22T07:44:06.000Z</updated>
+    <category term="android" />
+    <category term="linux" />
+    <category term="hexo" />
+    <category term="system" />
+    <category term="software" />
+    <category term="秀色工具" />
+    <category term="uniapp" />
+    <category term="微信小程序" />
+    <entry>
+        <id>https://www.jone.plus/2023/05/22/study/android/android_base_review/</id>
+        <title>Android 基础知识巩固</title>
+        <link rel="alternate" href="https://www.jone.plus/2023/05/22/study/android/android_base_review/"/>
+        <content type="html">&lt;h2 id=&#34;四大组件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四大组件&#34;&gt;#&lt;/a&gt; 四大组件&lt;/h2&gt;
+&lt;h3 id=&#34;activity&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#activity&#34;&gt;#&lt;/a&gt; Activity&lt;/h3&gt;
+&lt;h4 id=&#34;activity-是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#activity-是什么&#34;&gt;#&lt;/a&gt; Activity 是什么&lt;/h4&gt;
+&lt;p&gt;Activity 是 Android 中重要的组件之一，它在 APP 开发中扮演者不可缺少的角色，可以说就是我们的可见界面。&lt;/p&gt;
+&lt;p&gt;Activity 中包括了 UI 的展示、用户的交互设置、数据的逻辑处理等等。&lt;/p&gt;
+&lt;h4 id=&#34;activity的生命周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#activity的生命周期&#34;&gt;#&lt;/a&gt; Activity 的生命周期&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;p style=&#34;text-align:left;&#34;&gt;onCreate：当 activity 被创建会调用该方法，在该函数中会调用 setContentView (view:View) 进行界面 UI 设置。&lt;br/&gt; onRestart：当用户移动到其他的界面再回到该界面时会调用该函数&lt;br/&gt;onStart: 当走到这一周期函数时，用户可以看到界面，但是不能够进行交互&lt;br/&gt;onResume: 当调用该函数后，用户可以进行交互&lt;br/&gt;onPause：当当前界面失去焦点，但是可见时，该方法会被调用&lt;br/&gt;onStop：当用户离开该界面，会在离开之后的界面展示的 onStart 函数后调用&lt;br/&gt;onDestroy：当前 Activity 因为不使用导致系统 GC 销毁或者被手动 finish 后会被调用&lt;/p&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img data-src=&#34;https://fs.jone.plus/imgs/image-20230521220952700.png&#34; alt=&#34;image-20230521220952700&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;activity-中-intent-是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#activity-中-intent-是什么&#34;&gt;#&lt;/a&gt; Activity 中 Intent 是什么？&lt;/h4&gt;
+&lt;p&gt;Intent 常用于两个组件之间的交互，可以启动服务、启动 Activity、启动广播。也可用于 启动服务 以及 绑定服务 去与后台服务进行通信。意图实际上是提供了不同程序之间的运行时绑定，更多的使用在启动 Activity。&lt;/p&gt;
+&lt;p&gt;Intent 的结构：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;action : 可以执行一些通用的行为，例如 ACTION_VIEW、ACTION_EDIT、ACTION_MAIN&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;data: 传输需要处理的数据，例如：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ACTION_VIEW&lt;/code&gt;  content://contacts/people/1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ACTION_DIAL&lt;/code&gt;  content://contacts/people/1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ACTION_VIEW&lt;/code&gt;  tel:123&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ACTION_DIAL&lt;/code&gt;  tel:123&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ACTION_EDIT&lt;/code&gt;  content://contacts/people/1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ACTION_VIEW&lt;/code&gt;  content://contacts/people/&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;category ： 给定其他有关行为去执行例如： CATEGORY_LAUNCH、CATEGORY_ALTERNATIVE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;type : 生命 MINI type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;component 少用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;extra： 使用 bundle 存储额外的信息，可以在不同组件间传输少量数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;service&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#service&#34;&gt;#&lt;/a&gt; Service&lt;/h3&gt;
+&lt;h4 id=&#34;service-是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#service-是什么&#34;&gt;#&lt;/a&gt; Service 是什么？&lt;/h4&gt;
+&lt;p&gt;Service 是 Android 中可以在后台执行长时运行操作而不提供界面的组件。可以由其他组件启动。并且用户切换到其他应用，服务仍然会在后台运行。&lt;/p&gt;
+&lt;p&gt;此外，服务可以进行进程间通信【IPC】，常用在处理网络事务、音乐播放、执行 IO 与内容提供程序的交互。&lt;/p&gt;
+&lt;h4 id=&#34;service-的分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#service-的分类&#34;&gt;#&lt;/a&gt; Service 的分类？&lt;/h4&gt;
+&lt;p&gt;可以分为三种类型。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;前台服务：前台服务执行一些用户可观测的操作，例如音频软件会使用前台服务播放。前台服务必须显示通知。即使用户停止与应用的交互，前台服务仍会继续运行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;后台服务：后台服务执行用户不能注意到的操作，例如，如果应用使用某个服务来压缩其存储空间，则此服务通常是后台服务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;绑定服务：当应用组件通过调用  &lt;code&gt;bindService()&lt;/code&gt;  绑定到服务时，服务即处于&lt;em&gt;绑定&lt;/em&gt;状态。绑定服务会提供客户端 - 服务器接口，以便组件与服务进行交互、发送请求、接收结果，甚至是利用进程间通信 (IPC) 跨进程执行这些操作。仅当与另一个应用组件绑定时，绑定服务才会运行。多个组件可同时绑定到该服务，但全部取消绑定后，该服务即会被销毁。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;有一种情况是，既可以是启动服务（以无限期运行），亦支持绑定。唯一的问题在于您是否实现一组回调方法： &lt;code&gt;onStartCommand()&lt;/code&gt; （让组件启动服务）和  &lt;code&gt;onBind()&lt;/code&gt; （实现服务绑定）。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;service-的生命周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#service-的生命周期&#34;&gt;#&lt;/a&gt; Service 的生命周期&lt;/h4&gt;
+&lt;img data-src=&#34;https://fs.jone.plus/imgs/image-20230521231757499.png&#34; alt=&#34;image-20230521231757499&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;p&gt;onStartCommand：当另一个组件调用 startService 启动服务时，该服务会启动并一直运行，直到调用 stopSelf () 或者 stopService ()&lt;/p&gt;
+&lt;p&gt;onBind：当另一个组件想要与服务绑定（例如执行 RPC）时，系统会通过调用  &lt;code&gt;bindService()&lt;/code&gt;  来调用此方法。在此方法的实现中，您必须通过返回  &lt;code&gt;IBinder&lt;/code&gt;  提供一个接口，以供客户端用来与服务进行通信。&lt;/p&gt;
+&lt;p&gt;onCreate：首次创建服务时，系统会（在调用  &lt;code&gt;onStartCommand()&lt;/code&gt;  或  &lt;code&gt;onBind()&lt;/code&gt;  之前）调用此方法来执行一次性设置程序。如果服务已在运行，则不会调用此方法。&lt;/p&gt;
+&lt;p&gt;onDestroy：当不再使用服务且准备将其销毁时，系统会调用此方法。服务应通过实现此方法来清理任何资源，如线程、注册的侦听器、接收器等。这是服务接收的最后一个调用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用时必须在 Manifest 中注册服务&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;intentservice&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#intentservice&#34;&gt;#&lt;/a&gt; IntentService&lt;/h4&gt;
+&lt;p&gt;intentService 是对 Service 的一个封装&lt;/p&gt;
+&lt;p&gt;由于大多数启动服务无需同时处理多个请求（实际上，这种多线程情况可能很危险），因此最佳选择是利用  &lt;code&gt;IntentService&lt;/code&gt;  类实现服务。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;IntentService&lt;/code&gt;  类会执行以下操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建默认的工作线程，用于在应用的主线程外执行传递给  &lt;code&gt;onStartCommand()&lt;/code&gt;  的所有 Intent。&lt;/li&gt;
+&lt;li&gt;创建工作队列，用于将 Intent 逐一传递给  &lt;code&gt;onHandleIntent()&lt;/code&gt;  实现，这样您就永远不必担心多线程问题。&lt;/li&gt;
+&lt;li&gt;在处理完所有启动请求后停止服务，因此您永远不必调用  &lt;code&gt;stopSelf()&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;提供  &lt;code&gt;onBind()&lt;/code&gt;  的默认实现（返回 null）。&lt;/li&gt;
+&lt;li&gt;提供  &lt;code&gt;onStartCommand()&lt;/code&gt;  的默认实现，可将 Intent 依次发送到工作队列和  &lt;code&gt;onHandleIntent()&lt;/code&gt;  实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;broadcastreceiver&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#broadcastreceiver&#34;&gt;#&lt;/a&gt; BroadCastReceiver&lt;/h3&gt;
+</content>
+        <category term="android" />
+        <updated>2023-05-22T07:44:06.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.jone.plus/2022/10/08/study/android/android%E5%88%B7%E6%9C%BA/</id>
+        <title>Android 刷机 | MIUI | TWRP | Root 工具集锦</title>
+        <link rel="alternate" href="https://www.jone.plus/2022/10/08/study/android/android%E5%88%B7%E6%9C%BA/"/>
+        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://celltrackingapps.com/wp-content/uploads/2018/08/CELULAR-1-1140x445.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQUUlODklRTUlOEQlOTNST00=&#34;&gt;安卓 ROM&lt;/span&gt; 是手机重新刷入系统的一个程序包，安卓系统在手机市场里占有率很高，所以安卓 ROM 发展很快，国内比较知名的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQUUlODklRTUlOEQlOTNST00=&#34;&gt;安卓 ROM&lt;/span&gt; 有米柚，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTQlQjklOTAlRTglOUIlOTkvMTAwODU0NjA=&#34;&gt;乐蛙&lt;/span&gt;，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclOTklQkUlRTUlQkElQTYlRTQlQkElOTEvMjQ2MjAwMA==&#34;&gt;百度云&lt;/span&gt;，深度等。&lt;/p&gt;
+&lt;p&gt;在 android 开发过程中和玩机体验中，时而会想获得手机授权，这里收集了一些关于 Android 机型授权的有关资源。【有些地址或许需要科学访问】&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;teamwin-twrp&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#teamwin-twrp&#34;&gt;#&lt;/a&gt; TeamWin-TWRP&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/202210082258001.png&#34; alt=&#34;image-20221008225847926&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90d3JwLm1lL0RldmljZXMv&#34;&gt;Devices (twrp.me)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Recovery 神器 ，进入页面直接搜索手机型号即可。&lt;/p&gt;
+&lt;h2 id=&#34;小米-miui-red-mi&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小米-miui-red-mi&#34;&gt;#&lt;/a&gt; 小米 | MIUI | Red Mi&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubWl1aS5jb20vdW5sb2NrL2luZGV4Lmh0bWw=&#34;&gt;申请解锁小米手机 (miui.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93ZWIudmlwLm1pdWkuY29tL3BhZ2UvaW5mby9taW8vbWlvL2RldGFpbD9wb3N0SWQ9MTc5MzY1NzUmYW1wO2FwcF92ZXJzaW9uPWRldi4yMDA1MQ==&#34;&gt;教程] 小米手机解 BL 锁、线刷详细教程，适用于小米全系列手机 (miui.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly94aWFvbWlyb20uY29tLw==&#34;&gt;XiaomiROM.com - 小米 ROM 线刷包，卡刷包的最新及历史版本下载&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL1hpYW9taVJPTS5jb20=&#34;&gt;XiaomiROM.com&lt;/span&gt;&lt;/strong&gt; 是一个站点，用于收集小米手机、小米平板等小米机型其国行版、全球版、欧洲版（欧版）、印度版、印度尼西亚版、俄罗斯版（俄版）、土耳其版、台湾版（台版）、日本版（日版）的小米 ROM。刷机包下载链接来自小米 ROM 官网地址，您始终可以获得全速下载。固件均为小米官方 ROM，当前没有第三方 ROM。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;安卓开源系统&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安卓开源系统&#34;&gt;#&lt;/a&gt; 安卓开源系统&lt;/h2&gt;
+&lt;img data-src=&#34;https://www.mokeedev.com/images/logo.png&#34; width=&#34;150&#34;/&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubW9rZWVkZXYuY29tLw==&#34;&gt;魔趣 ROM (mokeedev.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb3dubG9hZC5tb2tlZWRldi5jb20v&#34;&gt;魔趣 ROM&lt;/span&gt; 基于 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20v&#34;&gt;Android 开源项目 (AOSP)&lt;/span&gt; 二次开发，所有的定制都遵循 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hYm91dC8=&#34;&gt;Google&lt;/span&gt; 推出的 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tYXRlcmlhbC5pby8=&#34;&gt;Material Design&lt;/span&gt; 设计语言，与原生 Android 界面保持着一致，这种定制方式降低了版本升级的难度。相比设备制造商迟缓、不积极的更新，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb3dubG9hZC5tb2tlZWRldi5jb20v&#34;&gt;魔趣 ROM&lt;/span&gt; 总能紧随 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hYm91dC8=&#34;&gt;Google&lt;/span&gt;，早早为用户带来最新的 Android 系统。&lt;/p&gt;
+&lt;h2 id=&#34;常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用命令&#34;&gt;#&lt;/a&gt; 常用命令&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIuYW5kcm9pZC5jb20vc3R1ZGlvL2NvbW1hbmQtbGluZS9hZGI/aGw9emgtY24=&#34;&gt;adb&lt;/span&gt;&lt;br&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9zZXR1cC9idWlsZC9ydW5uaW5n&#34;&gt;fastboot&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;adb 操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb devices # 查看连接设备&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell #进入shell &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb reboot bootloader #重启进入 Fastboot 模式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb kill-server #关闭服务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb start #启动&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb install ****.apk #安装apk&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb push file androidfilepath # 将文件file 推送到android  eg. adb  push name.pdf /storage/emulated/0/Download&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb pull androidfilepath file # 将文件androidfilepath 拉到本地存储 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;# &lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;fastboot 下操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot reboot #重启手机至recovery&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;2014 年及之前发布的设备&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot oem reboot+[模式名称] #reboot-recovery reboot-bootloader reboot-edl(高通下载模式)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot oem lock # 重装上锁&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot oem unlock #解锁&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;2015 年及之后发布的设备&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot flashing unlock  #解锁&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot flashing lock  #锁&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot boot twrp-*.img #不安装 镜像的情况下  使用镜像&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fastboot flash recovery twrp-*.img #flash recover 刷入镜像 &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9vbmZpeC5jbi9jb3Vyc2UvMzg0NT9iaWQ9MSZhbXA7bWlkPTg=&#34;&gt;小米（Mi） 9 小米（Mi） 9 手机刷 TWRP 方法，刷三方 Recovery 方法（解决卡米问题）刷机解锁 (onfix.cn)&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="android" />
+        <updated>2022-10-08T06:34:06.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.jone.plus/2022/07/19/problem/android/Android-Studio%20%E4%B8%8D%E8%83%BD%E6%A3%80%E6%B5%8B%E5%88%B0%E7%89%A9%E7%90%86%E6%9C%BA/</id>
+        <title>【linux】 Android-Studio 不能检测到物理机</title>
+        <link rel="alternate" href="https://www.jone.plus/2022/07/19/problem/android/Android-Studio%20%E4%B8%8D%E8%83%BD%E6%A3%80%E6%B5%8B%E5%88%B0%E7%89%A9%E7%90%86%E6%9C%BA/"/>
+        <content type="html">&lt;h1 id=&#34;android-studio-不能够检测到真机物理机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#android-studio-不能够检测到真机物理机&#34;&gt;#&lt;/a&gt; Android Studio 不能够检测到（真机）物理机&lt;/h1&gt;
+&lt;p&gt;使用 adb 命令显示：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#修改前&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb devices&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;List of devices attached&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3ff8c47a        no permissions (user jone is not &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; the plugdev group); see [http://developer.android.com/tools/device.html]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改后 正常显示&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb devices&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;List of devices attached&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3ff8c47a        device&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;修改方法：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; vim /etc/udev/rules.d/android.rules&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SUBSYSTEM==&lt;span class=&#34;string&#34;&gt;&amp;quot;usb&amp;quot;&lt;/span&gt;, ENV&amp;#123;DEVTYPE&amp;#125;==&lt;span class=&#34;string&#34;&gt;&amp;quot;usb_device&amp;quot;&lt;/span&gt;, MODE=&lt;span class=&#34;string&#34;&gt;&amp;quot;0666&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="android" />
+        <category term="linux" />
+        <updated>2022-07-18T16:16:28.000Z</updated>
+    </entry>
+</feed>

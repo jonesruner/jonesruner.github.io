@@ -1,0 +1,588 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Jone's Blog" href="https://www.jone.plus/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Jone's Blog" href="https://www.jone.plus/atom.xml" />
+<link rel="alternate" type="application/json" title="Jone's Blog" href="https://www.jone.plus/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="android" />
+
+
+<link rel="canonical" href="https://www.jone.plus/2022/10/08/study/android/android%E5%88%B7%E6%9C%BA/">
+
+
+
+  <title>
+Android 刷机 | MIUI | TWRP | Root 工具集锦 - android-dev |
+Jone's Blog = Jone's Blog</title>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Android 刷机 | MIUI | TWRP | Root 工具集锦
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-10-08 14:34:06">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-10-08T14:34:06+08:00">2022-10-08</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>1.3k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>1 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jone's Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://fs.jone.plus/imgs/laptop-1571702_1920.6g36gqaqncc0.jpg"></li>
+          <li class="item" data-background-image="https://fs.jone.plus/imgs/industry-2692640_1920.7fhp45e0vw40.jpg"></li>
+          <li class="item" data-background-image="https://fs.jone.plus/imgs/laptop-3087585_1920.2shl0vr3i920.jpg"></li>
+          <li class="item" data-background-image="https://fs.jone.plus/imgs/record-player-1851576_1920.6pyfr9h8nm40.jpg"></li>
+          <li class="item" data-background-image="https://fs.jone.plus/imgs/cog-wheels-2125181_1920.6ilv4xvzhug0.jpg"></li>
+          <li class="item" data-background-image="https://fs.jone.plus/imgs/industry-2738423_1920.32yelv1ljec0.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/android-dev/" itemprop="item" rel="index" title="分类于 android-dev"><span itemprop="name">android-dev</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://www.jone.plus/2022/10/08/study/android/android%E5%88%B7%E6%9C%BA/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/dragon.webp">
+    <meta itemprop="name" content="Jone Loucy">
+    <meta itemprop="description" content="Jone's Blog, 技术栈笔记，以及在学习过程中遇到的坎坷。">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Jone's Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p><img data-src="https://celltrackingapps.com/wp-content/uploads/2018/08/CELULAR-1-1140x445.jpg" alt=""></p>
+<hr>
+<p><span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQUUlODklRTUlOEQlOTNST00=">安卓 ROM</span> 是手机重新刷入系统的一个程序包，安卓系统在手机市场里占有率很高，所以安卓 ROM 发展很快，国内比较知名的<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQUUlODklRTUlOEQlOTNST00=">安卓 ROM</span> 有米柚，<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTQlQjklOTAlRTglOUIlOTkvMTAwODU0NjA=">乐蛙</span>，<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclOTklQkUlRTUlQkElQTYlRTQlQkElOTEvMjQ2MjAwMA==">百度云</span>，深度等。</p>
+<p>在 android 开发过程中和玩机体验中，时而会想获得手机授权，这里收集了一些关于 Android 机型授权的有关资源。【有些地址或许需要科学访问】</p>
+<hr>
+<h2 id="teamwin-twrp"><a class="markdownIt-Anchor" href="#teamwin-twrp">#</a> TeamWin-TWRP</h2>
+<p><img data-src="https://fs.jone.plus/markdown/202210082258001.png" alt="image-20221008225847926"></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly90d3JwLm1lL0RldmljZXMv">Devices (twrp.me)</span></p>
+<p>Recovery 神器 ，进入页面直接搜索手机型号即可。</p>
+<h2 id="小米-miui-red-mi"><a class="markdownIt-Anchor" href="#小米-miui-red-mi">#</a> 小米 | MIUI | Red Mi</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cubWl1aS5jb20vdW5sb2NrL2luZGV4Lmh0bWw=">申请解锁小米手机 (miui.com)</span></p>
+<p>[<span class="exturl" data-url="aHR0cHM6Ly93ZWIudmlwLm1pdWkuY29tL3BhZ2UvaW5mby9taW8vbWlvL2RldGFpbD9wb3N0SWQ9MTc5MzY1NzUmYW1wO2FwcF92ZXJzaW9uPWRldi4yMDA1MQ==">教程] 小米手机解 BL 锁、线刷详细教程，适用于小米全系列手机 (miui.com)</span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly94aWFvbWlyb20uY29tLw==">XiaomiROM.com - 小米 ROM 线刷包，卡刷包的最新及历史版本下载</span></p>
+<blockquote>
+<p><strong><span class="exturl" data-url="aHR0cDovL1hpYW9taVJPTS5jb20=">XiaomiROM.com</span></strong> 是一个站点，用于收集小米手机、小米平板等小米机型其国行版、全球版、欧洲版（欧版）、印度版、印度尼西亚版、俄罗斯版（俄版）、土耳其版、台湾版（台版）、日本版（日版）的小米 ROM。刷机包下载链接来自小米 ROM 官网地址，您始终可以获得全速下载。固件均为小米官方 ROM，当前没有第三方 ROM。</p>
+</blockquote>
+<h2 id="安卓开源系统"><a class="markdownIt-Anchor" href="#安卓开源系统">#</a> 安卓开源系统</h2>
+<img data-src="https://www.mokeedev.com/images/logo.png" width="150"/>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cubW9rZWVkZXYuY29tLw==">魔趣 ROM (mokeedev.com)</span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9kb3dubG9hZC5tb2tlZWRldi5jb20v">魔趣 ROM</span> 基于 <span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20v">Android 开源项目 (AOSP)</span> 二次开发，所有的定制都遵循 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hYm91dC8=">Google</span> 推出的 <span class="exturl" data-url="aHR0cHM6Ly9tYXRlcmlhbC5pby8=">Material Design</span> 设计语言，与原生 Android 界面保持着一致，这种定制方式降低了版本升级的难度。相比设备制造商迟缓、不积极的更新，<span class="exturl" data-url="aHR0cHM6Ly9kb3dubG9hZC5tb2tlZWRldi5jb20v">魔趣 ROM</span> 总能紧随 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hYm91dC8=">Google</span>，早早为用户带来最新的 Android 系统。</p>
+<h2 id="常用命令"><a class="markdownIt-Anchor" href="#常用命令">#</a> 常用命令</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIuYW5kcm9pZC5jb20vc3R1ZGlvL2NvbW1hbmQtbGluZS9hZGI/aGw9emgtY24=">adb</span><br>
+<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2UuYW5kcm9pZC5jb20vZG9jcy9zZXR1cC9idWlsZC9ydW5uaW5n">fastboot</span></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">adb 操作</span></span><br><span class="line">adb devices # 查看连接设备</span><br><span class="line">adb shell #进入shell </span><br><span class="line">adb reboot bootloader #重启进入 Fastboot 模式</span><br><span class="line">adb kill-server #关闭服务</span><br><span class="line">adb start #启动</span><br><span class="line">adb install ****.apk #安装apk</span><br><span class="line">adb push file androidfilepath # 将文件file 推送到android  eg. adb  push name.pdf /storage/emulated/0/Download</span><br><span class="line">adb pull androidfilepath file # 将文件androidfilepath 拉到本地存储 </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">fastboot 下操作</span></span><br><span class="line">fastboot reboot #重启手机至recovery</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">2014 年及之前发布的设备</span></span><br><span class="line">fastboot oem reboot+[模式名称] #reboot-recovery reboot-bootloader reboot-edl(高通下载模式)</span><br><span class="line">fastboot oem lock # 重装上锁</span><br><span class="line">fastboot oem unlock #解锁</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">2015 年及之后发布的设备</span></span><br><span class="line">fastboot flashing unlock  #解锁</span><br><span class="line">fastboot flashing lock  #锁</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">fastboot boot twrp-*.img #不安装 镜像的情况下  使用镜像</span><br><span class="line">fastboot flash recovery twrp-*.img #flash recover 刷入镜像 </span><br></pre></td></tr></table></figure>
+<h2 id="参考文章"><a class="markdownIt-Anchor" href="#参考文章">#</a> 参考文章</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9vbmZpeC5jbi9jb3Vyc2UvMzg0NT9iaWQ9MSZhbXA7bWlkPTg=">小米（Mi） 9 小米（Mi） 9 手机刷 TWRP 方法，刷三方 Recovery 方法（解决卡米问题）刷机解锁 (onfix.cn)</span></p>
+
+      <div class="tags">
+          <a href="/tags/android/" rel="tag"><i class="ic i-tag"></i> android</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2025-05-09 10:50:05" itemprop="dateModified" datetime="2025-05-09T10:50:05+08:00">2025-05-09</time>
+  </span>
+  <span id="2022/10/08/study/android/android刷机/" class="item leancloud_visitors" data-flag-title="Android 刷机 | MIUI | TWRP | Root 工具集锦" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Jone Loucy 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Jone Loucy 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Jone Loucy 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Jone Loucy <i class="ic i-at"><em>@</em></i>Jone's Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://www.jone.plus/2022/10/08/study/android/android%E5%88%B7%E6%9C%BA/" title="Android 刷机 | MIUI | TWRP | Root 工具集锦">https://www.jone.plus/2022/10/08/study/android/android刷机/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/07/19/problem/android/Android-Studio%20%E4%B8%8D%E8%83%BD%E6%A3%80%E6%B5%8B%E5%88%B0%E7%89%A9%E7%90%86%E6%9C%BA/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;fs.jone.plus&#x2F;imgs&#x2F;laptop-1571702_1920.6g36gqaqncc0.jpg" title="【linux】 Android-Studio 不能检测到物理机">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> android-dev</span>
+  <h3>【linux】 Android-Studio 不能检测到物理机</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2022/10/15/problem/linux/Arch%20%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E8%93%9D%E7%89%99/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;fs.jone.plus&#x2F;imgs&#x2F;industry-2692640_1920.7fhp45e0vw40.jpg" title="Archlinux 突然启动不了蓝牙">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> linux</span>
+  <h3>Archlinux 突然启动不了蓝牙</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#teamwin-twrp"><span class="toc-number">1.</span> <span class="toc-text"> TeamWin-TWRP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%B1%B3-miui-red-mi"><span class="toc-number">2.</span> <span class="toc-text"> 小米 | MIUI | Red Mi</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.</span> <span class="toc-text"> 安卓开源系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">4.</span> <span class="toc-text"> 常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-number">5.</span> <span class="toc-text"> 参考文章</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2022/07/19/problem/android/Android-Studio%20%E4%B8%8D%E8%83%BD%E6%A3%80%E6%B5%8B%E5%88%B0%E7%89%A9%E7%90%86%E6%9C%BA/" rel="bookmark" title="【linux】 Android-Studio 不能检测到物理机">【linux】 Android-Studio 不能检测到物理机</a></li><li class="active"><a href="/2022/10/08/study/android/android%E5%88%B7%E6%9C%BA/" rel="bookmark" title="Android 刷机 | MIUI | TWRP | Root 工具集锦">Android 刷机 | MIUI | TWRP | Root 工具集锦</a></li><li><a href="/2023/05/22/study/android/android_base_review/" rel="bookmark" title="Android 基础知识巩固">Android 基础知识巩固</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Jone Loucy"
+      data-src="/images/dragon.webp">
+  <p class="name" itemprop="name">Jone Loucy</p>
+  <div class="description" itemprop="description">技术栈笔记，以及在学习过程中遇到的坎坷。</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">11</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">3</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">8</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2pvbmVzcnVuZXI=" title="https:&#x2F;&#x2F;github.com&#x2F;jonesruner"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTEyODY1OTcyNTk=" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;1286597259"><i class="ic i-cloud-music"></i></span>
+      <a href="/jonesruner@163.com" title="jonesruner@163.com" class="item email"><i class="ic i-envelope"></i></a>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-首页"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/2022/07/16/others/about" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/2022/07/16/others/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2022/07/19/problem/android/Android-Studio%20%E4%B8%8D%E8%83%BD%E6%A3%80%E6%B5%8B%E5%88%B0%E7%89%A9%E7%90%86%E6%9C%BA/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2022/10/15/problem/linux/Arch%20%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E8%93%9D%E7%89%99/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/linux/" title="分类于 linux">linux</a>
+</div>
+
+    <span><a href="/2022/10/29/share/system/KDE-Connect/" title="Kde-Connect 实现 [Android | IOS | Linux ] 共享">Kde-Connect 实现 [Android | IOS | Linux ] 共享</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/android-dev/" title="分类于 android-dev">android-dev</a>
+</div>
+
+    <span><a href="/2022/07/19/problem/android/Android-Studio%20%E4%B8%8D%E8%83%BD%E6%A3%80%E6%B5%8B%E5%88%B0%E7%89%A9%E7%90%86%E6%9C%BA/" title="【linux】 Android-Studio 不能检测到物理机">【linux】 Android-Studio 不能检测到物理机</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/android-dev/" title="分类于 android-dev">android-dev</a>
+</div>
+
+    <span><a href="/2022/10/08/study/android/android%E5%88%B7%E6%9C%BA/" title="Android 刷机 | MIUI | TWRP | Root 工具集锦">Android 刷机 | MIUI | TWRP | Root 工具集锦</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/linux/" title="分类于 linux">linux</a>
+</div>
+
+    <span><a href="/2022/10/15/problem/linux/Arch%20%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E8%93%9D%E7%89%99/" title="Archlinux 突然启动不了蓝牙">Archlinux 突然启动不了蓝牙</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/07/16/others/about/" title="about">about</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/07/16/others/links/" title="links">links</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2024/10/26/study/uniapp/uniapp-markertap/" title="Uniapp 地图标点 点击事件  markertap &#x2F; bindmarkertap 不生效">Uniapp 地图标点 点击事件  markertap / bindmarkertap 不生效</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/share/" title="分类于 share">share</a>
+</div>
+
+    <span><a href="/2022/07/19/share/software/%E5%A5%BD%E7%94%A8%E7%9A%84Music%20Player/" title="好用的Music Player">好用的Music Player</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/linux/" title="分类于 linux">linux</a>
+</div>
+
+    <span><a href="/2022/07/18/share/system/Ubuntu-Windows%20%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/" title="Ubuntu-Windows 双系统安装后要做的事">Ubuntu-Windows 双系统安装后要做的事</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/android-dev/" title="分类于 android-dev">android-dev</a>
+</div>
+
+    <span><a href="/2023/05/22/study/android/android_base_review/" title="Android 基础知识巩固">Android 基础知识巩固</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jone Loucy @ Jone's Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">11k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">10 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/10/08/study/android/android刷机/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/babel-polyfill/7.12.1/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

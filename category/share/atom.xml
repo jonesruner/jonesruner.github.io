@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.jone.plus</id>
+    <title>Jone&#39;s Blog • Posts by &#34;share&#34; category</title>
+    <link href="https://www.jone.plus" />
+    <updated>2022-07-18T16:09:48.000Z</updated>
+    <category term="android" />
+    <category term="linux" />
+    <category term="hexo" />
+    <category term="system" />
+    <category term="software" />
+    <category term="秀色工具" />
+    <category term="uniapp" />
+    <category term="微信小程序" />
+    <entry>
+        <id>https://www.jone.plus/2022/07/19/share/software/%E5%A5%BD%E7%94%A8%E7%9A%84Music%20Player/</id>
+        <title>好用的Music Player</title>
+        <link rel="alternate" href="https://www.jone.plus/2022/07/19/share/software/%E5%A5%BD%E7%94%A8%E7%9A%84Music%20Player/"/>
+        <content type="html">&lt;h1 id=&#34;️好用的music-player&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#️好用的music-player&#34;&gt;#&lt;/a&gt; 🤸‍♂️好用的 Music Player&lt;/h1&gt;
+&lt;p&gt;🧘‍♂️其实好用的音乐软件有很多，我一直在使用网易云音乐，但是最近不知道为什么在 Ubuntu 上面有很多问题，比如：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;存储空间（缓存）疯狂增长&lt;/li&gt;
+&lt;li&gt;有一些歌曲加载不出来&lt;/li&gt;
+&lt;li&gt;曲库不是很全，想听下周杰伦的居然没得啥歌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面是我印象中深刻点的两款音乐播放器。🧘‍♂️&lt;/p&gt;
+&lt;h2 id=&#34;listener-1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#listener-1&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Listener 1&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;经测试不用科学上网也可以打开的。下载链接为你们准备好了。&lt;/p&gt;
+&lt;p&gt;更偏向于使用这个。本来录一个小视频。太长最近时间比较拥挤，不好上字幕。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这个有 APP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saXN0ZW4xLmdpdGh1Yi5pby9saXN0ZW4xLw==&#34;&gt;Listen 1 音乐播放器&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdown202207192047391.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;就如图上所说的一样，他是一个跨平台的音乐播放器，Listen 1 可以搜索和播放来自网易云音乐，虾米，QQ 音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲，让你的曲库更全面。&lt;/p&gt;
+&lt;p&gt;详细信息官方界面都有，就不复述了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;另外就是现在打击 ×× 这一块做的真的比较强，所以我分享的过程可能会做出一些细小的改变，比如文件名啥的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不得不说，这个 &lt;strong&gt;Linux 界面&lt;/strong&gt; 美观 (简约风格) 一些，但是功能差不多的，曲库全。&lt;/p&gt;
+&lt;p&gt;插件： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9taWNyb3NvZnRlZGdlLm1pY3Jvc29mdC5jb20vYWRkb25zL2RldGFpbC9saXN0ZW4tMS9obmVpZ2xjbXBlZWRibGttYm5kaGZiZWFoY3Bqb2pqZw==&#34;&gt;edge 浏览器用这个&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;搜索界面：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdown202207192051582.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;歌词界面：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdown202207192048810.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;APP：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdownUntitled%204.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMXNXS0Q5a2gxRUkzRWJVN1gxaEhDYVE/cHdkPWt1Nm0=&#34;&gt;分享链接 [百度网盘] 👇  (阿里云盘限制真麻烦)&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;链接: &lt;span class=&#34;attr&#34;&gt;https&lt;/span&gt;:&lt;span class=&#34;comment&#34;&gt;//pan.baidu.com/s/1sWKD9kh1EI3EbU7X1hHCaQ?pwd=ku6m 提取码: ku6m&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;yesplayermusic&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#yesplayermusic&#34;&gt;#&lt;/a&gt; YesPlayerMusic&lt;/h2&gt;
+&lt;p&gt;在线体验地址 奉上👐(没的 APP)：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tdXNpYy5xaWVyMjIyLmNvbS8=&#34;&gt;YesPlayMusic&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdownUntitled%205.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3FpZXIyMjIvWWVzUGxheU11c2lj&#34;&gt;GIthub 地址&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这个哈站点要我做评价的话： &lt;strong&gt;界面迷人，但是曲库还是有缺。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;它的特性如下，不多说了，好用就行。&lt;/p&gt;
+&lt;p&gt;✨ 特性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ 使用 Vue.js 全家桶开发&lt;/li&gt;
+&lt;li&gt;🔴 网易云账号登录（扫码 / 手机 / 邮箱登录）&lt;/li&gt;
+&lt;li&gt;📺 支持 MV 播放&lt;/li&gt;
+&lt;li&gt;📃 支持歌词显示&lt;/li&gt;
+&lt;li&gt;📻 支持私人 FM / 每日推荐歌曲&lt;/li&gt;
+&lt;li&gt;🚫🤝 无任何社交功能&lt;/li&gt;
+&lt;li&gt;🌎️ 海外用户可直接播放（需要登录网易云账号）&lt;/li&gt;
+&lt;li&gt;🔐支持 UnblockNeteaseMusic，自动使用各类音源替换变灰歌曲链接 （网页版不支持）
+&lt;ul&gt;
+&lt;li&gt;「各类音源」指默认启用的音源。&lt;/li&gt;
+&lt;li&gt;YouTube 音源需自行安装  &lt;code&gt;yt-dlp&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;✔️ 每日自动签到（手机端和电脑端同时签到）&lt;/li&gt;
+&lt;li&gt;🌚 Light/Dark Mode 自动切换&lt;/li&gt;
+&lt;li&gt;👆 支持 Touch Bar&lt;/li&gt;
+&lt;li&gt;🖥️ 支持 PWA，可在 Chrome/Edge 里点击地址栏右边的 ➕ 安装到电脑&lt;/li&gt;
+&lt;li&gt;🟥 支持 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL0xhc3QuZm0=&#34;&gt;Last.fm&lt;/span&gt; Scrobble&lt;/li&gt;
+&lt;li&gt;☁️ 支持音乐云盘&lt;/li&gt;
+&lt;li&gt;⌨️ 自定义快捷键和全局快捷键&lt;/li&gt;
+&lt;li&gt;🎧 支持 Mpris&lt;/li&gt;
+&lt;li&gt;🛠 更多特性开发中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;歌词界面：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdownUntitled%207.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMVE1NHJwZEdJbmlsd09KeHcxVDhHMmc/cHdkPTVzdjI=&#34;&gt;分享链接 [百度网盘] 👇  (阿里云盘限制真麻烦)&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight jsx&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;链接: &lt;span class=&#34;attr&#34;&gt;https&lt;/span&gt;:&lt;span class=&#34;comment&#34;&gt;//pan.baidu.com/s/1Q54rpdGInilwOJxw1T8G2g?pwd=5sv2 提取码: 5sv2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="software" />
+        <category term="秀色工具" />
+        <updated>2022-07-18T16:09:48.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.jone.plus/2022/07/18/share/hexo/Hexo-%E7%8B%AC%E5%AE%B6%E6%94%B6%E8%97%8F%E4%B8%BB%E9%A2%98/</id>
+        <title>Hexo-独家收藏主题</title>
+        <link rel="alternate" href="https://www.jone.plus/2022/07/18/share/hexo/Hexo-%E7%8B%AC%E5%AE%B6%E6%94%B6%E8%97%8F%E4%B8%BB%E9%A2%98/"/>
+        <content type="html">&lt;p&gt;记录下几款简约风格的 Hexo 主题&lt;/p&gt;
+&lt;h2 id=&#34;hexo-theme-livemylife&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-livemylife&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1YtVmluY2VuL2hleG8tdGhlbWUtbGl2ZW15bGlmZQ==&#34;&gt;hexo-theme-livemylife&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;created by&lt;/strong&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1YtVmluY2Vu&#34;&gt;V-Vincen (Vincent) (github.com)&lt;/span&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://fs.jone.plus/markdown/202207192241723.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92LXZpbmNlbi5saWZlLw==&#34;&gt;JavaDev | 一如 Java 深似海&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hexo-theme-keep&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-keep&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1hQb2V0L2hleG8tdGhlbWUta2VlcA==&#34;&gt;hexo-theme-keep&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;created by&lt;/strong&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1hQb2V0&#34;&gt;XPoet (指间的诗意) (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdown202207192238866.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly94cG9ldC5jbi8=&#34;&gt;XPoet’s Blog&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hexo-theme-shoka&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-shoka&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt;hexo-theme-shoka&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;created by&lt;/strong&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWU=&#34;&gt;amehime (观月真由理) (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;虽然有些花里胡哨，但是我喜欢，有播放器，有深夜模式切换。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdownUntitled%202.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv&#34;&gt;優萌初華&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hexo-theme-matery&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-theme-matery&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JsaW5rZm94L2hleG8tdGhlbWUtbWF0ZXJ5&#34;&gt;hexo-theme-matery&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;created by  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JsaW5rZm94&#34;&gt;blinkfox (闪烁之狐 (blinkfox)) (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://fs.jone.plus/markdown/markdownUntitled%203.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibGlua2ZveC5naXRodWIuaW8v&#34;&gt;闪烁之狐&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="hexo" />
+        <updated>2022-07-18T12:57:32.000Z</updated>
+    </entry>
+</feed>
